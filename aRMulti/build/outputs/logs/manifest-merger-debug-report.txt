@@ -1,0 +1,102 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:2:1-48:12
+	package
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:4:5-32
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.CAMERA
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:9:22-76
+uses-feature#android.hardware.camera.any
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:11:5-64
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:11:19-61
+uses-feature#android.hardware.camera
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:12:5-14:36
+	android:required
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:14:9-33
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:13:9-47
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:16:9-57
+uses-feature#0x00010100
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:18:5-54
+	android:glEsVersion
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:18:19-51
+supports-screens
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:20:5-25:40
+	android:largeScreens
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:22:9-36
+	android:smallScreens
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:24:9-36
+	android:normalScreens
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:23:9-37
+	android:xlargeScreens
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:25:9-37
+	android:anyDensity
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:21:9-34
+application
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:27:5-46:19
+	android:label
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:31:9-41
+	android:allowBackup
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:29:9-35
+	android:icon
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:30:9-38
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:28:9-75
+activity#org.artoolkit.ar.samples.ARMulti.ARMultiActivity
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:33:9-43:20
+	android:label
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:36:13-45
+	android:configChanges
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:35:13-74
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:34:13-76
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:38:13-41:29
+action#android.intent.action.MAIN
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:40:17-77
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:40:27-74
+activity#org.artoolkit.ar.base.camera.CameraPreferencesActivity
+ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:44:9-100
+	android:name
+		ADDED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml:44:19-88
+uses-sdk
+INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [ARMultiProj:aRBaseLib:unspecified] /Users/jafarali/.android/build-cache/1e7d1b1436124685fe8cbc66c83e151f4e5b9bf1/output/AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
+		INJECTED from /Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/src/main/AndroidManifest.xml
