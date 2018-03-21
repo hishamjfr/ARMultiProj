@@ -69,7 +69,7 @@ public class SimpleRenderer extends ARRenderer {
     @Override
     public boolean configureARScene() {
 
-        markerID = ARToolKit.getInstance().addMarker("multi;Data/multi/marker.dat");
+        markerID = ARToolKit.getInstance().addMarker("multi;Data/multi/marker2.dat");
         if (markerID < 0) return false;
 
         return true;
