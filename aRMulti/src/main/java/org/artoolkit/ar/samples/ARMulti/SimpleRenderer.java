@@ -61,7 +61,9 @@ import javax.microedition.khronos.opengles.GL10;
 public class SimpleRenderer extends ARRenderer {
 
     private int markerID = -1;
-    private Cube cube = new Cube(40.0f, 0.0f, 0.0f, 20.0f);
+
+//Use this below class declaration to change offset
+    private MyCuboid cuboid = new MyCuboid(40.0f, 40.0f, 40.0f, 40.0f);
 
     /**
      * Markers can be configured here.
@@ -79,7 +81,13 @@ public class SimpleRenderer extends ARRenderer {
      * Override the draw function from ARRenderer.
      */
     @Override
+
+    /** Do non Augmented Reality stuff here. Will be called once after all AR objects have been drawn.
+     * The transformation matrices may have to be reset.*/
+
     public void draw(GL10 gl) {
+
+        /**Directly called before each object is drawn. Used to setup lighting and other OpenGL specific things.*/
 
         gl.glClear(GL10.GL_COLOR_BUFFER_BIT | GL10.GL_DEPTH_BUFFER_BIT);
 
@@ -96,7 +104,7 @@ public class SimpleRenderer extends ARRenderer {
         if (ARToolKit.getInstance().queryMarkerVisible(markerID)) {
             gl.glMatrixMode(GL10.GL_MODELVIEW);
             gl.glLoadMatrixf(ARToolKit.getInstance().queryMarkerTransformation(markerID), 0);
-            cube.draw(gl);
+            cuboid.draw(gl);
         }
 
     }

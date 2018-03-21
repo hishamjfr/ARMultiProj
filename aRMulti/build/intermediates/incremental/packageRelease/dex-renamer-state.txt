@@ -1,4 +1,0 @@
-#Wed Mar 14 11:18:20 GMT 2018
-base.0=/Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/build/intermediates/transforms/dex/release/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
