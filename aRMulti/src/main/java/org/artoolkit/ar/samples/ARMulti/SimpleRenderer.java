@@ -63,7 +63,7 @@ public class SimpleRenderer extends ARRenderer {
     private int markerID = -1;
 
 //Use this below class declaration to change offset
-    private MyCuboid cuboid = new MyCuboid(40.0f, 40.0f, 40.0f, 40.0f);
+    private MyCuboid cuboid = new MyCuboid(10.0f, 30.0f, 5.0f, 10.0f);
 
     /**
      * Markers can be configured here.
@@ -71,7 +71,7 @@ public class SimpleRenderer extends ARRenderer {
     @Override
     public boolean configureARScene() {
 
-        markerID = ARToolKit.getInstance().addMarker("multi;Data/multi/marker2.dat");
+        markerID = ARToolKit.getInstance().addMarker("multi;Data/multi/marker.dat");
         if (markerID < 0) return false;
 
         return true;
