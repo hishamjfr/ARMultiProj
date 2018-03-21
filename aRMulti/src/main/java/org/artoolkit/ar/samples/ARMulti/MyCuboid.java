@@ -44,14 +44,28 @@ public class MyCuboid{
         this.mIndexBuffer = RenderUtils.buildByteBuffer(indices);
     }
 
-    private void setColour (float size, float x, float y, float z, float temp) {
+    //My alternative function for colour manipulation
+
+    private void setArrays2(float size, float x, float y, float z, float temp) {
+        //Declaring float half size
         float hs = size / 2.0F;
+
+        //Defining vertices as half sizes away from origin (center point x,y,z)
         float[] vertices = new float[]{x - hs, y - hs, z - hs, x + hs, y - hs, z - hs, x + hs, y + hs, z - hs, x - hs, y + hs, z - hs, x - hs, y - hs, z + hs, x + hs, y - hs, z + hs, x + hs, y + hs, z + hs, x - hs, y + hs, z + hs};
 
         //Map temperature to "c" value, scaling it down accordingly, assuming float temp = fahrenheit
         float c = temp / 100F;
         //Create color array, note that all transparency values are 1.0F
-        float[] colors = new float[]{0.0F, 0.0F, 0.0F, 1.0F, c, 0.0F, 0.0F, 1.0F, c, c, 0.0F, 1.0F, 0.0F, c, 0.0F, 1.0F, 0.0F, 0.0F, c, 1.0F, c, 0.0F, c, 1.0F, c, c, c, 1.0F, 0.0F, c, c, 1.0F};
+        float[] colors = new float[]{
+
+                0.0F, 0.0F, 0.0F, 1.0F, //White
+                c, 0.0F, 0.0F, 1.0F, //Red
+                c, c, 0.0F, 1.0F,  //Yellow
+                0.0F, c, 0.0F, 1.0F, //Green
+                0.0F, 0.0F, c, 1.0F, //Blue
+                c, 0.0F, c, 1.0F, //Pink
+                c, c, c, 1.0F, //Black
+                0.0F, c, c, 1.0F}; //Neon blue
         byte[] indices = new byte[]{0, 4, 5, 0, 5, 1, 1, 5, 6, 1, 6, 2, 2, 6, 7, 2, 7, 3, 3, 7, 4, 3, 4, 0, 4, 7, 6, 4, 6, 5, 3, 0, 1, 3, 1, 2};
         this.mVertexBuffer = RenderUtils.buildFloatBuffer(vertices);
 
