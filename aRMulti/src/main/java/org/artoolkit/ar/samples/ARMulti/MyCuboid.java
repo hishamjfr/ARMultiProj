@@ -30,6 +30,7 @@ public class MyCuboid{
         this.setArrays(size, x, y, z);
     }
 
+    /*
     private void setArrays(float size, float x, float y, float z) {
         float hs = size / 2.0F;
         float[] vertices = new float[]{x - hs, y - hs, z - hs, x + hs, y - hs, z - hs, x + hs, y + hs, z - hs, x - hs, y + hs, z - hs, x - hs, y - hs, z + hs, x + hs, y - hs, z + hs, x + hs, y + hs, z + hs, x - hs, y + hs, z + hs};
@@ -43,18 +44,37 @@ public class MyCuboid{
         this.mColorBuffer = RenderUtils.buildFloatBuffer(colors);
         this.mIndexBuffer = RenderUtils.buildByteBuffer(indices);
     }
+    */
 
     //My alternative function for colour manipulation
 
-    private void setArrays2(float size, float x, float y, float z, float temp) {
+    private void setArrays(float size, float x, float y, float z) {
         //Declaring float half size
         float hs = size / 2.0F;
 
         //Defining vertices as half sizes away from origin (center point x,y,z)
-        float[] vertices = new float[]{x - hs, y - hs, z - hs, x + hs, y - hs, z - hs, x + hs, y + hs, z - hs, x - hs, y + hs, z - hs, x - hs, y - hs, z + hs, x + hs, y - hs, z + hs, x + hs, y + hs, z + hs, x - hs, y + hs, z + hs};
+        float[] vertices = new float[]{
+                x - hs, y - hs, z - hs,
+                x + hs, y - hs, z - hs,
+                x + hs, y + hs, z - hs,
+                x - hs, y + hs, z - hs,
+                x - hs, y - hs, z + hs,
+                x + hs, y - hs, z + hs,
+                x + hs, y + hs, z + hs,
+                x - hs, y + hs, z + hs
+        };
+        float c = 1.0F;
 
-        //Map temperature to "c" value, scaling it down accordingly, assuming float temp = fahrenheit
-        float c = temp / 100F;
+        /*Map temperature to "c" value, scaling it down accordingly, assuming float temp = fahrenheit
+        float c = SimpleRenderer.temp/ 100F;
+        OR
+
+        float c ranges from 0 --> 1.0F?
+
+
+        */
+
+
         //Create color array, note that all transparency values are 1.0F
         float[] colors = new float[]{
 
@@ -66,13 +86,41 @@ public class MyCuboid{
                 c, 0.0F, c, 1.0F, //Pink
                 c, c, c, 1.0F, //Black
                 0.0F, c, c, 1.0F}; //Neon blue
-        byte[] indices = new byte[]{0, 4, 5, 0, 5, 1, 1, 5, 6, 1, 6, 2, 2, 6, 7, 2, 7, 3, 3, 7, 4, 3, 4, 0, 4, 7, 6, 4, 6, 5, 3, 0, 1, 3, 1, 2};
+        byte[] indices = new byte[]{
+                0, 4, 5,
+                0, 5, 1,
+                1, 5, 6,
+                1, 6, 2,
+                2, 6, 7,
+                2, 7, 3,
+                3, 7, 4,
+                3, 4, 0,
+                4, 7, 6,
+                4, 6, 5,
+                3, 0, 1,
+                3, 1, 2
+        };
         this.mVertexBuffer = RenderUtils.buildFloatBuffer(vertices);
 
         //updates color buffer
         this.mColorBuffer = RenderUtils.buildFloatBuffer(colors);
         this.mIndexBuffer = RenderUtils.buildByteBuffer(indices);
     }
+
+
+  /*  Original color buffer
+
+                0.0F, 0.0F, 0.0F, 1.0F, //White
+                c, 0.0F, 0.0F, 1.0F, //Red
+                c, c, 0.0F, 1.0F,  //Yellow
+                0.0F, c, 0.0F, 1.0F, //Green
+                0.0F, 0.0F, c, 1.0F, //Blue
+                c, 0.0F, c, 1.0F, //Pink
+                c, c, c, 1.0F, //Black
+                0.0F, c, c, 1.0F}; //Neon blue
+
+   */
+
 
     public void draw(GL10 unused) {
         GLES10.glColorPointer(4, 5126, 0, this.mColorBuffer);
