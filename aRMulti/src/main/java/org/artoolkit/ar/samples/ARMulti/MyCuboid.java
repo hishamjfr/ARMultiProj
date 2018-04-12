@@ -51,17 +51,22 @@ public class MyCuboid{
     private void setArrays(float size, float x, float y, float z) {
         //Declaring float half size
         float hs = size / 2.0F;
+        float hq = size / 4.0F;
 
         //Defining vertices as half sizes away from origin (center point x,y,z)
+        //This Cuboid's dimensions: lwh = 4 x 4 x 1
+
         float[] vertices = new float[]{
-                x - hs, y - hs, z - hs,
-                x + hs, y - hs, z - hs,
-                x + hs, y + hs, z - hs,
-                x - hs, y + hs, z - hs,
-                x - hs, y - hs, z + hs,
-                x + hs, y - hs, z + hs,
-                x + hs, y + hs, z + hs,
-                x - hs, y + hs, z + hs
+                //Back face
+                x - hs, y - hs, z - hq, //bottom left
+                x + hs, y - hs, z - hq, //bottom right
+                x + hs, y + hs, z - hq, //top right
+                x - hs, y + hs, z - hq, //top left
+
+                x - hs, y - hs, z + hq, //bottom left
+                x + hs, y - hs, z + hq, //bottom right
+                x + hs, y + hs, z + hq, //top right
+                x - hs, y + hs, z + hq  //top left
         };
         float c = 1.0F;
 
@@ -75,7 +80,8 @@ public class MyCuboid{
         */
 
 
-        //Create color array, note that all transparency values are 1.0F
+        //Create color array, note that all transparency values are 1.0F i.e. fully transparent
+        //Colours correspond to vertices in the buffer above
         float[] colors = new float[]{
 
                 0.0F, 0.0F, 0.0F, 1.0F, //White
@@ -106,20 +112,6 @@ public class MyCuboid{
         this.mColorBuffer = RenderUtils.buildFloatBuffer(colors);
         this.mIndexBuffer = RenderUtils.buildByteBuffer(indices);
     }
-
-
-  /*  Original color buffer
-
-                0.0F, 0.0F, 0.0F, 1.0F, //White
-                c, 0.0F, 0.0F, 1.0F, //Red
-                c, c, 0.0F, 1.0F,  //Yellow
-                0.0F, c, 0.0F, 1.0F, //Green
-                0.0F, 0.0F, c, 1.0F, //Blue
-                c, 0.0F, c, 1.0F, //Pink
-                c, c, c, 1.0F, //Black
-                0.0F, c, c, 1.0F}; //Neon blue
-
-   */
 
 
     public void draw(GL10 unused) {

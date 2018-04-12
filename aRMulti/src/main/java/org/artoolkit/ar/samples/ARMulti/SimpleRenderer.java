@@ -63,8 +63,9 @@ public class SimpleRenderer extends ARRenderer {
     private int markerID = -1;
 
 //Use this below class declaration to change offset
-    private MyCuboid cuboid = new MyCuboid(10.0f, 30.0f, 5.0f, 10.0f);
+    private MyCuboid cuboid = new MyCuboid(20.0f, 50.0f, 5.0f, 10.0f);
 
+    //old offset 10.0f, 30.0f, 5.0f, 10.0f
     /**
      * Markers can be configured here.
      */
