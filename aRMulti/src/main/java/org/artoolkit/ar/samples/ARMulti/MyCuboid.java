@@ -23,11 +23,12 @@ public class MyCuboid{
     }
 
     public MyCuboid (float size) {
-        this(size, 0.0F, 0.0F, 0.0F);
+        this(20.0F, size, 0.0F, 0.0F, 0.0F);
     }
 
-    public MyCuboid (float size, float x, float y, float z) {
+    public MyCuboid (float temp, float size, float x, float y, float z) {
         this.setArrays(size, x, y, z);
+        this.setTemp(temp);
     }
 
     /*
@@ -62,36 +63,32 @@ public class MyCuboid{
                 x + hs, y - hs, z - hq, //bottom right
                 x + hs, y + hs, z - hq, //top right
                 x - hs, y + hs, z - hq, //top left
-
+                //Front face
                 x - hs, y - hs, z + hq, //bottom left
                 x + hs, y - hs, z + hq, //bottom right
                 x + hs, y + hs, z + hq, //top right
                 x - hs, y + hs, z + hq  //top left
         };
-        float c = 1.0F;
-
         /*Map temperature to "c" value, scaling it down accordingly, assuming float temp = fahrenheit
         float c = SimpleRenderer.temp/ 100F;
         OR
 
-        float c ranges from 0 --> 1.0F?
-
-
-        */
-
+        float c ranges from 0 --> 1.0F? */
 
         //Create color array, note that all transparency values are 1.0F i.e. fully transparent
         //Colours correspond to vertices in the buffer above
         float[] colors = new float[]{
 
                 0.0F, 0.0F, 0.0F, 1.0F, //White
-                c, 0.0F, 0.0F, 1.0F, //Red
-                c, c, 0.0F, 1.0F,  //Yellow
-                0.0F, c, 0.0F, 1.0F, //Green
-                0.0F, 0.0F, c, 1.0F, //Blue
-                c, 0.0F, c, 1.0F, //Pink
-                c, c, c, 1.0F, //Black
-                0.0F, c, c, 1.0F}; //Neon blue
+                1.0F, 1.0F, 0.0F, 1.0F, //Yellow
+                1.0F, 0.0F, 0.0F, 1.0F,  //Red
+                1.0F, 0.0F, 0.0F, 1.0F, //Red
+
+                0.0F, 0.0F, 0.0F, 1.0F, //White
+                1.0F, 0.5F, 0, 1.0F, //Orange
+                1.0F, 0.0F, 0.0F, 1.0F, //Red
+                1.0F, 0.0F, 0.0F, 1.0F}; //Red
+
         byte[] indices = new byte[]{
                 0, 4, 5,
                 0, 5, 1,
@@ -112,7 +109,36 @@ public class MyCuboid{
         this.mColorBuffer = RenderUtils.buildFloatBuffer(colors);
         this.mIndexBuffer = RenderUtils.buildByteBuffer(indices);
     }
+    private void setTemp(float temp) {
 
+        /*Map temperature to "c" value, scaling it down accordingly, assuming float temp = fahrenheit
+        float c = SimpleRenderer.temp/ 100F;
+        OR
+
+        Assume temp is in celsius, i.e. 15 < temp < 50
+
+         */
+
+        //Create color array, note that all transparency values are 1.0F i.e. fully transparent
+        //Colours correspond to vertices in the buffer above
+
+        float tempFactor = temp/50F; //i.e. this will range from 0.4 to 1
+        float[] colors = new float[]{
+
+                tempFactor, 0.0F, 0.0F, 1.0F, //White
+                tempFactor, 1.0F, 0.0F, 1.0F, //Yellow
+                tempFactor, 0.0F, 0.0F, 1.0F,  //Red
+                tempFactor, 0.0F, 0.0F, 1.0F, //Red
+
+                tempFactor, 0.0F, 0.0F, 1.0F, //White
+                tempFactor, 0.5F, 0, 1.0F, //Orange
+                tempFactor, 0.0F, 0.0F, 1.0F, //Red
+                tempFactor, 0.0F, 0.0F, 1.0F}; //Red
+
+
+        //updates color buffer
+        this.mColorBuffer = RenderUtils.buildFloatBuffer(colors);
+    }
 
     public void draw(GL10 unused) {
         GLES10.glColorPointer(4, 5126, 0, this.mColorBuffer);

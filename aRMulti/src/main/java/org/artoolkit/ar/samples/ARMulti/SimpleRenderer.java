@@ -59,11 +59,12 @@ import javax.microedition.khronos.opengles.GL10;
  * A very simple Renderer that adds a marker and draws a cube on it.
  */
 public class SimpleRenderer extends ARRenderer {
-    int temp = 0;
+    public float temp = 0;
     private int markerID = -1;
 
 //Use this below class declaration to change offset
-    private MyCuboid cuboid = new MyCuboid(20.0f, 50.0f, 5.0f, 10.0f);
+    //Make sure marker config corresponds to physical config in mm - comes into accuracy
+    private MyCuboid cuboid = new MyCuboid(20.0f,20.0f, 50.0f, 5.0f, 10.0f);
 
     //old offset 10.0f, 30.0f, 5.0f, 10.0f
     /**
@@ -86,6 +87,7 @@ public class SimpleRenderer extends ARRenderer {
     /** Do non Augmented Reality stuff here. Will be called once after all AR objects have been drawn.
      * The transformation matrices may have to be reset.*/
 
+
     public void draw(GL10 gl) {
 
         /**Directly called before each object is drawn. Used to setup lighting and other OpenGL specific things.*/
@@ -105,8 +107,9 @@ public class SimpleRenderer extends ARRenderer {
         if (ARToolKit.getInstance().queryMarkerVisible(markerID)) {
             gl.glMatrixMode(GL10.GL_MODELVIEW);
             gl.glLoadMatrixf(ARToolKit.getInstance().queryMarkerTransformation(markerID), 0);
+         //   cuboid.setTemp (temp)
             cuboid.draw(gl);
-           // temp = temp +1;
+            temp = temp +1;
         }
 
     }
