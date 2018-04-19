@@ -4,7 +4,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72446a16-72ab-40c3-8582-87fa52ae7bf2" name="Default" comment="">
+    <list default="true" id="72446a16-72ab-40c3-8582-87fa52ae7bf2" name="Default" comment="Created setTemp method">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -15,11 +15,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_611d3fe825614e1f7ac48297b89757849c166f04.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_611d3fe825614e1f7ac48297b89757849c166f04.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/aRMulti-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/aRMulti-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ARMultiProj.iml" afterPath="$PROJECT_DIR$/../ARMultiProj.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../aRBaseLib/aRBaseLib.iml" afterPath="$PROJECT_DIR$/../aRBaseLib/aRBaseLib.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/assets/debug/Data/multi/marker.dat" afterPath="$PROJECT_DIR$/build/intermediates/assets/debug/Data/multi/marker.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/assets/Data/multi/marker.dat" afterPath="$PROJECT_DIR$/src/main/assets/Data/multi/marker.dat" />
@@ -62,8 +59,8 @@
       <file leaf-file-name="SimpleRenderer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/artoolkit/ar/samples/ARMulti/SimpleRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+            <state relative-caret-position="566">
+              <caret line="118" column="9" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="118" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -72,14 +69,15 @@
       <file leaf-file-name="MyCuboid.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/artoolkit/ar/samples/ARMulti/MyCuboid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="120" column="40" lean-forward="false" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
                 <element signature="method#setArrays#0;class#MyCuboid#0" expanded="false" />
-                <element signature="method#setTemp#0;class#MyCuboid#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -2012,6 +2010,34 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ARMultiProj" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aRMulti" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ARMultiProj" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aRMulti" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ARMulti" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="ProjectPane" />
@@ -2023,7 +2049,7 @@
     <property name="FullScreen" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="SearchEverywhereHistoryKey" value="cube&#9;FILE&#9;jar:///Users/jafarali/.android/build-cache/1e7d1b1436124685fe8cbc66c83e151f4e5b9bf1/output/jars/classes.jar!/org/artoolkit/ar/base/rendering/Cube.class" />
-    <property name="device.picker.selection" value="Galaxy_Nexus_API_27" />
+    <property name="device.picker.selection" value="23Q7N16310001174" />
     <property name="android.profiler.active" value="true" />
   </component>
   <component name="RunDashboard">
@@ -2108,7 +2134,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524090786497" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524122929738" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2155,7 +2181,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524090786497" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524122929738" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2337,7 +2363,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524090786499" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1524122929740" />
       </method>
     </configuration>
     <list size="1">
@@ -2390,14 +2416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523523549808</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created setTemp method">
+      <created>1524090854571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524090854571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2405,8 +2438,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2435,14 +2468,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started drawing cuboid" />
     <MESSAGE value="Finished Cuboid drawing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Cuboid drawing" />
+    <MESSAGE value="Created setTemp method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created setTemp method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/artoolkit/ar/samples/ARMulti/MyCuboid.java</url>
-          <line>52</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -2475,9 +2509,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
             <element signature="method#setArrays#0;class#MyCuboid#0" expanded="false" />
-            <element signature="method#setTemp#0;class#MyCuboid#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2604,24 +2639,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.android/build-cache/1e7d1b1436124685fe8cbc66c83e151f4e5b9bf1/output/jars/classes.jar!/org/artoolkit/ar/base/rendering/ARRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/artoolkit/ar/samples/ARMulti/SimpleRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
+        <state relative-caret-position="566">
+          <caret line="118" column="9" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="118" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/artoolkit/ar/samples/ARMulti/MyCuboid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="248">
+          <caret line="120" column="40" lean-forward="false" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
             <element signature="method#setArrays#0;class#MyCuboid#0" expanded="false" />
-            <element signature="method#setTemp#0;class#MyCuboid#0" expanded="false" />
           </folding>
         </state>
       </provider>

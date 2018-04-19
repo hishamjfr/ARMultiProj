@@ -59,12 +59,12 @@ import javax.microedition.khronos.opengles.GL10;
  * A very simple Renderer that adds a marker and draws a cube on it.
  */
 public class SimpleRenderer extends ARRenderer {
-    public float temp = 0;
+    public float temp = 20F;
     private int markerID = -1;
 
 //Use this below class declaration to change offset
     //Make sure marker config corresponds to physical config in mm - comes into accuracy
-    private MyCuboid cuboid = new MyCuboid(20.0f,20.0f, 50.0f, 5.0f, 10.0f);
+    private MyCuboid cuboid = new MyCuboid(20.0f, 50.0f, 5.0f, 10.0f);
 
     //old offset 10.0f, 30.0f, 5.0f, 10.0f
     /**
@@ -107,10 +107,15 @@ public class SimpleRenderer extends ARRenderer {
         if (ARToolKit.getInstance().queryMarkerVisible(markerID)) {
             gl.glMatrixMode(GL10.GL_MODELVIEW);
             gl.glLoadMatrixf(ARToolKit.getInstance().queryMarkerTransformation(markerID), 0);
-         //   cuboid.setTemp (temp)
             cuboid.draw(gl);
-            temp = temp +1;
         }
 
+        if (temp<50 && temp >20) {
+            cuboid.setTemp (temp);
+            temp = temp + 1/3F;
+        }
+        else {
+            temp = temp - 30F;
+        }
     }
 }

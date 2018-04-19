@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Apr 18 23:32:51 BST 2018
+#Thu Apr 19 08:27:47 BST 2018
 25.file=/Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/build/intermediates/transforms/stripDebugSymbol/debug/folders/2000/1f/main/lib/x86_64/libARWrapper.so
 25.base=/Users/jafarali/Documents/ARToolKit5-bin-5.3.2-Android/AndroidStudioProjects/ARMultiProj/aRMulti/build/intermediates/transforms/stripDebugSymbol/debug/folders/2000/1f/main
 22.set=ANDROID_RESOURCE
